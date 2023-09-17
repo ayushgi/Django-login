@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users login</title>
+</head>
+<body>
+    <div id="ls">
+        <div class="login" id="logi">
+            <li id="j"> <a href="">Login Now </a></li>
+            <form action="/index.html" id="for" name="myform" method="post">
+                {% csrf_token %}
+                    <p> Email:</p>
+                    <div id="email">
+                    <input type="email" name="email"  placeholder="Enter your email id "><b><span class="formerror"></span></b>
+                    </div>
+                    <p>Password:</p>
+                    <div id="pass">
+                    <input type="password" name="password" id="pass" placeholder="Password"><b><span class="formerror"></span></b>
+                </div>
+                    <p>Remember Me:</p>
+                    <input type="checkbox" name="check" id="">
+                    <li><button>Login</button><span><a id="d" href="/signup.html">Don't have account ?</a></span></li> 
+    
+            </form>
+        </div>
+    </div>
+        
+</body>
+</html>
